@@ -15,4 +15,6 @@ class MenuItem
     def self.all
         @@all
     end
+
+    
 end

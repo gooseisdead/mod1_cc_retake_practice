@@ -15,5 +15,15 @@ class Restaurant
     def self.all
         @@all
     end
+
+    def menu_items
+        MenuItem.all.select { |item| item.restaurant == self }
+    end
+
+    def recipes 
+        self.menu_items.map { |item| item.recipe }
+    end
+
+
 end
 

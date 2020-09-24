@@ -1,6 +1,6 @@
 class RestaurantOwner
 
-    attr_accessor :name, :age, :recipe
+    attr_accessor :name, :age
     attr_reader 
 
     @@all = []
@@ -8,7 +8,6 @@ class RestaurantOwner
     def initialize(name, age)
         @name = name
         @age = age
-        @recipe = nil
         @@all << self
     end
 

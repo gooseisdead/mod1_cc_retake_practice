@@ -1,6 +1,6 @@
 class MenuItem
 
-    attr_accessor :restaurant, :recipe, :price
+    attr_accessor :restaurant, :recipe, :price, :owner
     attr_reader 
 
     @@all = []
@@ -8,7 +8,8 @@ class MenuItem
     def initialize(restaurant, recipe, price)
         @restaurant = restaurant
         @recipe = recipe
-        @price = price
+        @price = price.to_f
+        @owner = nil
         @@all << self
     end
 

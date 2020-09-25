@@ -79,28 +79,28 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 #### RestaurantOwner
 <!-- - `RestaurantOwner#restaurants`
   - returns an array of `Restaurant` instances associated with the `RestaurantOwner` instance. -->
-- `RestaurantOwner#menu_items`
-  - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances.
+<!-- - `RestaurantOwner#menu_items`
+  - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances. -->
 
 #### MenuItem
 <!-- - `MenuItem#recipe`
   - returns the `Recipe` instance associated with the `MenuItem` instance -->
 <!-- - `MenuItem#restaurant`
   - returns the `Restaurant` instance associated with the `MenuItem` instance -->
-- `MenuItem#owner`
-  - returns the `Owner` instance associated with the `MenuItem` instance
+<!-- - `MenuItem#owner`
+  - returns the `Owner` instance associated with the `MenuItem` instance -->
 
 
 
 ### Aggregate and Association Methods
 
 #### Recipe
-- `Recipe#average_price`
-    - returns the average price (integer) for all `MenuItem` instances of this `Recipe` instance. 
-- `Recipe#highest_price`
-  - returns the highest price (integer) for all `MenuItem` instances of this `Recipe` instance. 
-- `Recipe#cheapest_restaurant`
-  - returns the `Restaurant` instance where this `Recipe` instance is the cheapest. 
+<!-- - `Recipe#average_price`
+    - returns the average price (integer) for all `MenuItem` instances of this `Recipe` instance.  -->
+<!-- - `Recipe#highest_price`
+  - returns the highest price (integer) for all `MenuItem` instances of this `Recipe` instance.  -->
+<!-- - `Recipe#cheapest_restaurant`
+  - returns the `Restaurant` instance where this `Recipe` instance is the cheapest.  -->
 - `Recipe.inactive`
   - returns an array of `Recipe` instances that are not currently being sold at any restaurants.
 

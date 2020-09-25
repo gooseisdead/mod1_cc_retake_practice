@@ -20,7 +20,8 @@ class RestaurantOwner
     end
 
     def menu_items
-        
-        # self.restaurants.map { |own| own.owner }
+        MenuItem.all.select { |item| item.owner == self}
     end
+        
+        
 end

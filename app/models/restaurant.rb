@@ -8,7 +8,7 @@ class Restaurant
     def initialize(owner, name, star_rating)
         @owner = owner
         @name = name
-        @star_rating = star_rating
+        @star_rating = star_rating.to_i
         @@all << self
     end
 
@@ -22,6 +22,14 @@ class Restaurant
 
     def recipes 
         self.menu_items.map { |item| item.recipe }
+    end
+
+    def has_dish?(recipe)
+        
+    end
+
+    def self.highest_rated
+        @@all.map { |diner| diner.star_rating }.max
     end
 
 

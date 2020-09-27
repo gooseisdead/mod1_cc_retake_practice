@@ -17,5 +17,12 @@ class MenuItem
         @@all
     end
 
+    def self.recipes
+        MenuItem.all.map { |item| item.recipe }
+    end
+
+    def self.most_expensive_item
+        self.all.max_by { |item| item.price }
+    end
     
 end

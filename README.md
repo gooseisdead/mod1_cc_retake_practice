@@ -107,18 +107,18 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 #### Restaurant
 - `Restaurant#has_dish?(recipe)`
     - returns `true` if the dish is on the menu at the given restaurant and `false` if it is not. 
-- `Restaurant.highest_rated`
-    - returns the highest rated `Restaurant` instance.
+<!-- - `Restaurant.highest_rated`
+    - returns the highest rated `Restaurant` instance. -->
 
 #### RestaurantOwner
-- `RestaurantOwner.average_age`
-  - returns the average age of all the `RestaurantOwner`s
+<!-- - `RestaurantOwner.average_age`
+  - returns the average age of all the `RestaurantOwner`s -->
 - `RestaurantOwner#sell_restaurant(restaurant, buyer)`
   - transfers ownership of a `Restaurant` instance (which must belong to the current user) to the `buyer` which is a `RestaurantOwner` instance. 
 
 #### MenuItem
-- `MenuItem.most_expensive_item`
-    - returns the most expensive `MenuItem` instance
+<!-- - `MenuItem.most_expensive_item`
+    - returns the most expensive `MenuItem` instance -->
 
 
 

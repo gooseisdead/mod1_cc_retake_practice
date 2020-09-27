@@ -26,11 +26,13 @@ class Restaurant
 
     def has_dish?(recipe)
         
+        
     end
 
     def self.highest_rated
-        @@all.map { |diner| diner.star_rating }.max
+        self.all.max_by { |diner| diner.star_rating }
     end
+
 
 
 end

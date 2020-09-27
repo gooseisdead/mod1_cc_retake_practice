@@ -28,13 +28,20 @@ class Recipe
     end
 
     def highest_price
-        self.menu_items.map { |item| item.price }.max
+        self.menu_items.map { |item| item.price.to_i }.max
     end
 
     def cheapest_price
-        self.menu_items.map { |item| item.price }.min
+        self.menu_items.min_by { |item| item.price }
     end
-        
+
+    def self.inactive
+        inactive_instance = MenuItem.all.each do |item|
+            if !item.incude?(self.recipe)
+            end
+        end
+
+    end
     
 
 end

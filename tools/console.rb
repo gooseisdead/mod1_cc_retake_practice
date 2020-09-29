@@ -24,10 +24,6 @@ gravy = MenuItem.new(shakeys, stock, 1.95)
 stew = MenuItem.new(shakeys, mirapoix, 2.05)
 meatloaf = MenuItem.new(bigboy, stock, 7.50)
 
-# soup.owner = bob
-# salad.owner = bob
-# gravy.owner = glen
-
 bob.restaurant = bigboy
 glen.restaurant = shakeys
 

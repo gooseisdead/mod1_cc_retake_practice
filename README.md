@@ -105,8 +105,8 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
   - returns an array of `Recipe` instances that are not currently being sold at any restaurants.
 
 #### Restaurant
-- `Restaurant#has_dish?(recipe)`
-    - returns `true` if the dish is on the menu at the given restaurant and `false` if it is not. 
+<!-- - `Restaurant#has_dish?(recipe)`
+    - returns `true` if the dish is on the menu at the given restaurant and `false` if it is not.  -->
 <!-- - `Restaurant.highest_rated`
     - returns the highest rated `Restaurant` instance. -->
 

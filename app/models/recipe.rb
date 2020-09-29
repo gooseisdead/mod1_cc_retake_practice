@@ -36,11 +36,10 @@ class Recipe
     end
 
     def self.inactive
-        inactive_instance = MenuItem.all.each do |item|
-            if !item.incude?(self.recipe)
+        array = MenuItem.all.map { |item| item.recipe }
+            if !array.include?
+                return array
             end
-        end
-
     end
     
 

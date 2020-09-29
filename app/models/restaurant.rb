@@ -24,9 +24,13 @@ class Restaurant
         self.menu_items.map { |item| item.recipe }
     end
 
-    def has_dish?(recipe)
-        
-        
+    def has_dish?(rec)
+        array = self.menu_items.map { |item| item.recipe }
+            if array.include?(rec)
+                return true
+            else
+                return false
+            end   
     end
 
     def self.highest_rated
